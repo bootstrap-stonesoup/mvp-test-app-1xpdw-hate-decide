@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-onov
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/bootstrap/mvp-dev-lrwl-tenant/mvp-test-app/test-mvp-component-onov@sha256:82216b4ef75faab91e635e72822627957e62c0641a1ee16de602533ed53e159a
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
